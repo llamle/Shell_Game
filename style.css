@@ -1,0 +1,84 @@
+#scoreboard{
+  display:inline-block;
+  width:100%;
+  height:20px;
+}
+
+#board{
+  width:100%;
+  height:180px;
+  background-color: green;
+
+}
+
+body{
+  background-color: #white;
+  margin: 0;
+}
+
+button{
+  width:100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+ul{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  width:390px;
+  height:180px;
+}
+
+li{
+  position: absolute;
+  list-style: none;
+  display: inline-block;
+  width:100px;
+  height:150px;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  transition: all 1s ease;
+}
+
+.one{
+  transform: translateX(0px);
+}
+
+.two{
+  transform: translateX(110px);
+}
+
+.three{
+  transform: translateX(220px);
+}
+
+#ball{
+  padding-top: 70px;
+}
+
+img {
+  display: inline;
+  width: 100px;
+  height: auto;
+  position: absolute;
+}
+
+#board .one.revealed{
+  transform: translateX(0px) rotate(45deg);
+  transition: transform 1s ease;
+  transform-origin: bottom right;
+}
+
+#board .two.revealed{
+  transform: translateX(110px) rotate(45deg);
+  transition: transform 1s ease;
+  transform-origin: bottom right;
+}
+
+#board .three.revealed{
+  transform: translateX(220px) rotate(45deg);
+  transition: transform 1s ease;
+  transform-origin: bottom right;
+}
